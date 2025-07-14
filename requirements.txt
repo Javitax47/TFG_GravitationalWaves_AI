@@ -1,0 +1,12 @@
+# --- Core Scientific & Data Handling ---
+numpy
+scipy
+pandas
+matplotlib
+
+# --- Gravitational Wave Astronomy ---
+gwpy
+astropy
+
+# --- Development Environment ---
+jupyterlab
