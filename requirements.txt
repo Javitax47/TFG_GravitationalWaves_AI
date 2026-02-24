@@ -1,13 +1,38 @@
-# --- Core Scientific & Data Handling ---
-numpy
-scipy
-pandas
-matplotlib
+# ==============================================================================
+# ==                            requirements.txt                            ==
+# ==============================================================================
+#
+# ¡¡¡ IMPORTANTE !!!
+# Este archivo de requisitos NO incluye TensorFlow. Para un rendimiento óptimo
+# en GPU, TensorFlow debe ser instalado primero y por separado usando Conda:
+#
+# 1. conda create -n tfg-env python=3.9 -c conda-forge
+# 2. conda activate tfg-env
+# 3. conda install tensorflow -c conda-forge
+# 4. pip install -r requirements.txt
+#
+# ==============================================================================
 
-# --- Gravitational Wave Astronomy ---
+# --- Core Machine Learning & Training ---
+# Librerías esenciales para el entrenamiento, la evaluación y el tuning.
+numpy<1.24,>=1.22        # Para operaciones numéricas. Versión fijada para compatibilidad.
+h5py~=3.9.0              # Para leer y escribir los datasets en formato HDF5.
+keras-tuner~=1.4.6       # Herramienta para la búsqueda automática de hiperparámetros.
+tqdm~=4.65.0             # Para mostrar barras de progreso elegantes.
+
+# --- Data Generation & Gravitational Wave Physics ---
+# Librerías específicas del dominio para generar y manipular las formas de onda.
+# ¡IMPORTANTE! Estas librerías solo funcionan en entornos Linux/macOS (o WSL).
 gwpy
-astropy
-pycbc  
+lalsuite~=7.1.0          # Colección de software de análisis de datos de LIGO/Virgo.
+pycbc~=2.0.5             # Herramienta principal para generar las señales y el ruido.
 
-# --- Development Environment ---
-jupyterlab
+# --- Visualization & Data Analysis ---
+# Utilidades para explorar los datos y visualizar los resultados.
+matplotlib~=3.7.1
+seaborn~=0.12.2
+pandas~=2.0.0
+
+# --- Web API Backend ---
+# Dependencias para la aplicación web interactiva.
+Flask~=2.2.0
