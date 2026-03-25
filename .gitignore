@@ -1,0 +1,15 @@
+# Carpetas de datos y modelos pesados
+data/
+archive/
+
+# Logs y resultados de Keras Tuner
+keras_tuner_*/
+keras_tuner/
+logs/
+
+# Archivos de entorno y caché
+**/__pycache__/
+*.hdf5
+*.h5
+*.keras
+*.pyc

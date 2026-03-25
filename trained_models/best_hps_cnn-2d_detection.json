@@ -1,0 +1,10 @@
+{
+    "dense_units": 128,
+    "dropout_rate": 0.4,
+    "l2_reg": 0.00021765065892749875,
+    "learning_rate": 0.0001,
+    "tuner/epochs": 20,
+    "tuner/initial_epoch": 0,
+    "tuner/bracket": 0,
+    "tuner/round": 0
+}
